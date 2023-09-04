@@ -1,0 +1,102 @@
+---------------------
+Mentorship program 
+
+(virtual intership)
+
+---------------------
+ TECHNOLOGIES USED IN THE REPOS:-
+
+
+1. html5,
+2. css3
+3. Javascript 
+4. Tailwind 
+
+
+----------------------
+
+Projects: 
+projects : 60 days
+	
+
+----------------------
+
+github :
+repository : 7 projects
+
+----------------------
+
+requirement: {21 days}
+
+1. offical email id
+2. offer letter:
+3. linkedin page : 
+4. Landing webpage : DEADLINE: 3OCTOBER
+5. LOGO DESIGN : DEADLINE 6SEPTEMBER
+
+----------------------
+
+landing website: {1 month}
+
+- logo
+
+- name
+
+- technology used
+
+- target/ motto
+
+- contact page
+
+- creator page
+
+- enquiry page/feedback (Linkedin page, gaurav refer)
+
+-------------------------------
+
+curicullum: 2-months
+
+----------------------------
+
+
+projects list:
+
+1. typing game
+
+2. product landing page
+
+3. quiz app
+
+4. Music player.
+
+5. Lyrics search app.
+
+6. Speak number guessing game (speech recognition).
+
+7. Movie seat booking
+-------------------------------
+
+1. repo (7 project+ including readme file)
+2. time optional : without audio videos with coding
+3. Landing page: single page ()
+
+
+--------------------------------------
+roles
+1. Landing page and repos responsibility: Vivek &
+2. Social media handling: Gaurav 
+3. Project Lead : saumyajeet
+4. **Google forms & students handling: ABHISHEK & 
+
+
+
+
+
+
+
+
+
+
+
+
+
