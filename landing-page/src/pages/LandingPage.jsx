@@ -10,10 +10,10 @@ const LandingPage = () => {
     <>
       <Header />
       <Home />
-      <About />
+      {/* <About />
       <Intership />
       <Verfiy />
-      <Contact />
+      <Contact /> */}
     </>
   );
 };
