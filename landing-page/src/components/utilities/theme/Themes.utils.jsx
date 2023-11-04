@@ -1,7 +1,7 @@
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 
 const Themes = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   const availabeThemes = [
     "light",
     "dark",
@@ -45,11 +45,6 @@ const Themes = () => {
       className="select select-bordered w-full max-w-xs"
       onChange={handleThemeChange}
     >
-      <option disabled selected>
-        Who shot first?
-      </option>
-      <option>Han Solo</option>
-      <option>Greedo</option>
       {availabeThemes.map((theme) => (
         <option key={theme} value={theme}>
           {theme}
