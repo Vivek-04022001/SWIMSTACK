@@ -58,7 +58,7 @@ const Header = () => {
               id="menu-btn"
               class={`${
                 isMobileMenuOpen && "open"
-              } z-40 block hamburger md:hidden focus:outline-none  `}
+              } z-50 block hamburger md:hidden focus:outline-none  `}
               onClick={handleToggle}
             >
               <span class="hamburger-top"></span>
@@ -73,7 +73,7 @@ const Header = () => {
           id="menu"
           class={`absolute top-0 bottom-0 left-0 ${
             isMobileMenuOpen ? "flex" : "hidden"
-          } flex-col  self-end  w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg  uppercase bg-accent text-secondary `}
+          } flex-col  self-end  w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg  uppercase bg-accent text-secondary z-40`}
         >
           <a href="#home" class="hover:text-primary">
             Home
