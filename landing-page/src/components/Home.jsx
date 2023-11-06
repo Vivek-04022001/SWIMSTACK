@@ -7,18 +7,37 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 const Home = () => {
   const images = [home1, home2, home3, home4];
+  const textMessage = ["Navigating Your Career Journey with Swim Stack","Swim Your Way to Success with Swim Stack","Dive Deep, Reach High with Swim Stack","Helping You Navigate the Waters of Success"];
 
   return (
     <section id="home">
-      <div className="container max-w-screen md:max-w-6xl mx-auto md:px-6 py-0 md:py-6 ">
+      <div className=" min-h-screen  mx-auto ">
         {/* Carousel Container */}
-        <div className="carousel w-full">
+        <div className="carousel w-full ">
           {/* slides-section */}
           {images.map((image, index) => (
-            <div key={`slide${index + 1}`} className="carousel-item relative w-full" id={`slide${index+1}`}>
+            <div
+              key={`slide${index + 1}`}
+              className="carousel-item relative w-full"
+              id={`slide${index + 1}`}
+            >
               <div className="relative">
-                <img src={image} className="w-full  z-0" />
-                <div className="absolute inset-0 bg-black bg-opacity-40 z-2"></div>
+                <img src={image} className="w-full z-0 object-cover" />
+                <div className="absolute inset-0 bg-black bg-opacity-70 z-2"></div>
+                {/* text content */}
+                <div className="absolute w-full h-full inset-0 z-10 flex flex-col items-center justify-center gap-y-10">
+                  <h3 className="max-w-xl text-center text-6xl  font-bold text-primary ">
+                    {textMessage[index]}
+                  </h3>
+                  <div className="flex gap-4 ">
+                    <button className="px-8 py-3 uppercase bg-secondary/90 font-bold hover:bg-secondary text-primary">
+                      Contact Us
+                    </button>
+                    <button className="px-8 py-3 uppercase bg-primary/90 font-bold text-black hover:bg-primary">
+                      Apply Us
+                    </button>
+                  </div>
+                </div>
               </div>
 
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-10">
@@ -29,7 +48,7 @@ const Home = () => {
                   <AiOutlineArrowLeft />
                 </a>
                 <a
-                  href={`#slide${index === images.length - 1 ? 0 : index + 2}`}
+                  href={`#slide${index === images.length - 1 ? 1 : index + 2}`}
                   className="btn btn-sm md:btn-lg btn-circle bg-primary/70 md:text-2xl text-accent border-none hover:bg-primary    "
                 >
                   <AiOutlineArrowRight />
@@ -37,87 +56,6 @@ const Home = () => {
               </div>
             </div>
           ))}
-          {/* <div id="slide1" className="carousel-item relative w-full ">
-            <div className="relative">
-              <img src={home1} className="w-full  z-0" />
-              <div className="absolute inset-0 bg-black bg-opacity-40 z-2"></div>
-            </div>
-
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-10">
-              <a
-                href="#slide4"
-                className="btn btn-sm md:btn-lg btn-circle bg-primary/70 md:text-2xl text-accent border-none hover:bg-primary  "
-              >
-                <AiOutlineArrowLeft />
-              </a>
-              <a
-                href="#slide2"
-                className="btn btn-sm md:btn-lg btn-circle bg-primary/70 md:text-2xl text-accent border-none hover:bg-primary   "
-              >
-                <AiOutlineArrowRight />
-              </a>
-            </div>
-          </div>
-          <div id="slide2" className="carousel-item relative w-full">
-            <div className="relative">
-              <img src={home2} className="w-full  z-0" />
-              <div className="absolute inset-0 bg-black bg-opacity-40 z-2"></div>
-            </div>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-10">
-              <a
-                href="#slide1"
-                className="btn btn-sm md:btn-lg btn-circle bg-primary/70 md:text-2xl text-accent border-none hover:bg-primary   "
-              >
-                <AiOutlineArrowLeft />
-              </a>
-              <a
-                href="#slide3"
-                className="btn btn-sm md:btn-lg btn-circle bg-primary/70 md:text-2xl text-accent border-none hover:bg-primary   "
-              >
-                <AiOutlineArrowRight />
-              </a>
-            </div>
-          </div>
-          <div id="slide3" className="carousel-item relative w-full">
-            <div className="relative">
-              <img src={home3} className="w-full  z-0" />
-              <div className="absolute inset-0 bg-black bg-opacity-40 z-2"></div>
-            </div>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-10">
-              <a
-                href="#slide2"
-                className="btn btn-sm md:btn-lg btn-circle bg-primary/70 md:text-2xl text-accent border-none hover:bg-primary   "
-              >
-                <AiOutlineArrowLeft />
-              </a>
-              <a
-                href="#slide4"
-                className="btn btn-sm md:btn-lg btn-circle bg-primary/70 md:text-2xl text-accent border-none hover:bg-primary   "
-              >
-                <AiOutlineArrowRight />
-              </a>
-            </div>
-          </div>
-          <div id="slide4" className="carousel-item relative w-full">
-            <div className="relative">
-              <img src={home4} className="w-full  z-0" />
-              <div className="absolute inset-0 bg-black bg-opacity-40 z-2"></div>
-            </div>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-10 ">
-              <a
-                href="#slide3"
-                className="btn btn-sm md:btn-lg btn-circle bg-primary/70 md:text-2xl text-accent border-none hover:bg-primary   "
-              >
-                <AiOutlineArrowLeft />
-              </a>
-              <a
-                href="#slide1"
-                className="btn btn-sm md:btn-lg btn-circle bg-primary/70 md:text-2xl text-accent border-none hover:bg-primary   "
-              >
-                <AiOutlineArrowRight />
-              </a>
-            </div>
-          </div> */}
         </div>
       </div>
     </section>
