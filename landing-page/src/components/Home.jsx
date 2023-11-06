@@ -34,7 +34,7 @@ const Home = () => {
                       Contact Us
                     </button>
                     <button className="px-8 py-3 uppercase bg-primary/90 font-bold text-black hover:bg-primary">
-                      Apply Us
+                      Apply Here
                     </button>
                   </div>
                 </div>
