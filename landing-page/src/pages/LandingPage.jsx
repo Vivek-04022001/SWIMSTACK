@@ -10,8 +10,8 @@ const LandingPage = () => {
     <>
       <Header />
       <Home />
-      {/* <About />
-      <Intership />
+      <About />
+      {/* <Intership />
       <Verfiy />
       <Contact /> */}
     </>

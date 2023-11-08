@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <section id="home">
-      <div className=" min-h-screen  mx-auto ">
+      <div className=" md:min-h-screen  mx-auto mb-20">
         {/* Carousel Container */}
         <div className="carousel w-full  ">
           {/* slides-section */}
@@ -31,7 +31,7 @@ const Home = () => {
                   src={image}
                   className="h-full md:w-full z-0 object-cover "
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-60 z-2"></div>
+                <div className="absolute inset-0 bg-accent bg-opacity-60 z-2"></div>
                 {/* text content */}
                 <div className="absolute w-full h-full inset-0 z-10 flex flex-col items-center justify-center gap-y-10">
                   <h3 className="px-2 md:px-0 md:max-w-3xl text-center text-4xl md:text-6xl  font-bold text-primary tracking-wider">
@@ -51,13 +51,13 @@ const Home = () => {
               <div className="hidden  absolute md:flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-10">
                 <a
                   href={`#slide${index === 0 ? images.length : index}`}
-                  className="btn btn-sm md:btn-lg btn-circle bg-primary/70 md:text-2xl text-accent border-none hover:bg-primary   "
+                  className="btn btn-sm md:btn-lg btn-circle bg-transparent  md:text-2xl text-primary border-primary hover:bg-secondary/50 hover:text-primary hover:border-none"
                 >
                   <AiOutlineArrowLeft />
                 </a>
                 <a
                   href={`#slide${index === images.length - 1 ? 1 : index + 2}`}
-                  className="btn btn-sm md:btn-lg btn-circle bg-primary/70 md:text-2xl text-accent border-none hover:bg-primary    "
+                  className="btn btn-sm md:btn-lg btn-circle bg-transparent  md:text-2xl text-primary border-primary hover:bg-secondary/50 hover:text-primary  hover:border-none"
                 >
                   <AiOutlineArrowRight />
                 </a>
