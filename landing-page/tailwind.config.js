@@ -20,6 +20,10 @@ module.exports = {
         widest: ".3em",
       },
     },
+    fontFamily:{
+      'about': ['Pt Serif'],
+      'about-text':['Oswald']
+    }
   },
   daisyui: {
     themes: [
