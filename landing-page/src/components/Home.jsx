@@ -16,9 +16,9 @@ const Home = () => {
 
   return (
     <section id="home">
-      <div className=" md:min-h-screen  mx-auto mb-20">
+      <div className="md:min-h-screen mx-auto pt-10">
         {/* Carousel Container */}
-        <div className="carousel w-full  ">
+        <div className="carousel w-full">
           {/* slides-section */}
           {images.map((image, index) => (
             <div
@@ -31,7 +31,7 @@ const Home = () => {
                   src={image}
                   className="h-full md:w-full z-0 object-cover "
                 />
-                <div className="absolute inset-0 bg-accent bg-opacity-60 z-2"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-40 z-2"></div>
                 {/* text content */}
                 <div className="absolute w-full h-full inset-0 z-10 flex flex-col items-center justify-center gap-y-10">
                   <h3 className="px-2 md:px-0 md:max-w-3xl text-center text-4xl md:text-6xl  font-bold text-primary tracking-wider">

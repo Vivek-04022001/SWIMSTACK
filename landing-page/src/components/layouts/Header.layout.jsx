@@ -13,8 +13,8 @@ const Header = () => {
     // <!-- Hero section -->
     <section id="header">
       {/* <!-- hero container --> */}
-      <div class="container max-w-6xl mx-auto px-6 py-0 md:py-6 ">
-        <nav class=" flex items-center  md:justify-between font-bold  ">
+      <div class="container max-w-6xl mx-auto px-6">
+        <nav class="flex items-center  md:justify-between font-bold  ">
           {/* <!-- Logo --> */}
           <div className="flex flex-1 justify-center md:justify-start">
             {/* desktop logo */}
@@ -71,23 +71,27 @@ const Header = () => {
 
         <div
           id="menu"
-          class={`absolute top-0 bottom-0 left-0 ${
+          class={`fixed top-0 bottom-0 left-0 ${
             isMobileMenuOpen ? "flex" : "hidden"
           } flex-col  self-end  w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg  uppercase bg-accent text-secondary z-40`}
         >
-          <a href="#home" class="hover:text-primary">
+          <a href="#home" class="hover:text-primary" onClick={handleToggle}>
             Home
           </a>
-          <a href="#about" class="hover:text-primary">
+          <a href="#about" class="hover:text-primary" onClick={handleToggle}>
             About
           </a>
-          <a href="#internship" class="hover:text-primary">
+          <a
+            href="#internship"
+            class="hover:text-primary"
+            onClick={handleToggle}
+          >
             Internship
           </a>
-          <a href="#verfiy" class="hover:text-primary">
+          <a href="#verfiy" class="hover:text-primary" onClick={handleToggle}>
             Verfiy
           </a>
-          <a href="#contact" class="hover:text-primary">
+          <a href="#contact" class="hover:text-primary" onClick={handleToggle}>
             Contact
           </a>
         </div>

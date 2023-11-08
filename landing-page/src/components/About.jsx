@@ -2,12 +2,12 @@ import { useState } from "react";
 import aboutImage from "../assets/about.jpg";
 const About = () => {
   return (
-    <section id="about">
-      <div className=" container max-w-6xl  mx-auto px-3 py-0 md:py-6 mb-20">
-        <div className="flex-col font-about">
+    <section id="about" className="bg-secondary/30">
+      <div className=" container max-w-6xl  mx-auto px-3 py-10 ">
+        <div className="flex flex-col font-about">
           {/* main headline */}
           <div className="text-black text-4xl md:text-6xl text-center capitalize space-y-8">
-            <h3 className="bg-secondary inline px-12 py-2 rounded-full border-2 border-secondary hover:bg-primary text-3xl">
+            <h3 className="bg-secondary inline px-12 py-2 rounded-full border-2 border-secondary hover:bg-transparent text-3xl transition-colors ease-in-out duration-150">
               About Us
             </h3>
             <h4>grow your career with us</h4>
@@ -15,11 +15,11 @@ const About = () => {
           {/* image and text container */}
           <div className="flex flex-col md:flex-row mt-12 gap-6">
             {/* image container */}
-            <div className="group relative md:w-1/2 w-full md:rounded-2xl md:border border-black overflow-hidden p-0  md:p-4 shadow-lg">
+            <div className="group relative md:w-1/2 w-full md:rounded-2xl md:border border-black bg-black overflow-hidden p-0  md:p-4 shadow-lg">
               <img
                 src={aboutImage}
                 alt="about-image"
-                className="group w-full h-full object-cover group-hover:scale-110 transition-hover duration-500 ease-in-out"
+                className="group w-full h-full object-cover group-hover:scale-110 transition-hover duration-500 ease-in-out md:rounded-2xl"
               />
               <div className="absolute top-0 left-0 w-full h-full group-hover:bg-accent/50 group-hover:opacity-10 "></div>
             </div>
@@ -71,12 +71,11 @@ const About = () => {
                   <span className="whitespace-nowrap text-secondary text-2xl font-bold tracking-wider">
                     Swim Stack
                   </span>{" "}
-                  Swim Stack offers diverse internships for technical and
-                  non-technical backgrounds, empowering students to achieve
-                  their goals. We support aspiring individuals, including Tier-3
-                  college students, bridging the resource gap and preparing them
-                  for future careers. Join us on a journey of learning and
-                  growth.
+                  offers diverse internships for technical and non-technical
+                  backgrounds, empowering students to achieve their goals. We
+                  support aspiring individuals, including Tier-3 college
+                  students, bridging the resource gap and preparing them for
+                  future careers. Join us on a journey of learning and growth.
                 </p>
               </div>
             </div>
