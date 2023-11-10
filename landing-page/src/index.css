@@ -8,9 +8,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+html{
+  scroll-behavior:smooth;
+}
+
 /* --------------------------------- */
 /* Header section */
 /* --------------------------------- */
+
+
 
 /* Hamburger Menu */
 .hamburger {

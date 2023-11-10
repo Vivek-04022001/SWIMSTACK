@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <section id="home">
-      <div className="md:min-h-screen mx-auto pt-10">
+      <div className=" mx-auto pt-10">
         {/* Carousel Container */}
         <div className="carousel w-full">
           {/* slides-section */}
