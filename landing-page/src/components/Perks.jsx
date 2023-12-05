@@ -1,10 +1,12 @@
-import lor from "../assets/LOR.jpg";
-import certificate from "../assets/certificate.jpg";
+import lor from "../assets/LOR.png";
+import certificate from "../assets/certificate.png";
 import TiltCard from "./utilities/TiltCard";
 
 const Perks = () => {
   return (
-    <section id="perks" className="bg-secondary/30">
+    <section id="perks" 
+    // className="bg-secondary/30"
+    >
       <div className=" container max-w-6xl  mx-auto px-3 py-10 ">
         <div className="flex flex-col space-y-20 font-about">
           {/* headling */}

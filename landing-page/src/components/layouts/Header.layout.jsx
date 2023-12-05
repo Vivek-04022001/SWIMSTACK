@@ -1,7 +1,6 @@
 import { useState } from "react";
-import logo from "../../assets/logo.jpg";
-import logo_desktop from "../../assets/horizontal_logo.png";
-import logo_mobile from "../../assets/vertical_logo.png";
+import logo_mobile from '../../assets/logo/horizontal_logo.png'
+import logo_desktop from '../../assets/logo/vertical_logo.png'
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

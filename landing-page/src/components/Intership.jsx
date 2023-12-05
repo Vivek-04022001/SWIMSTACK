@@ -4,8 +4,10 @@ import machine from '../assets/machine-learning.jpg'
 
 const Intership = () => {
   return (
-    <section id="internship" className="bg-accent">
-      <div className="container max-w-6xl mx-auto px-3 py-10 ">
+    <section id="internship" 
+    // className="bg-accent"
+    >
+      <div className="container max-w-6xl min-h-screen mx-auto px-3 py-10 ">
         <div className="flex flex-col font-about">
           {/* headling */}
           <div className="mb-20 text-4xl md:text-6xl text-center capitalize space-y-8">

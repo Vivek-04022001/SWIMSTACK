@@ -2,8 +2,10 @@ import { useState } from "react";
 import aboutImage from "../assets/about.jpg";
 const About = () => {
   return (
-    <section id="about" className="bg-secondary/30">
-      <div className=" container max-w-6xl  mx-auto px-3 py-10 ">
+    <section id="about" 
+    // className="bg-secondary/30"
+    >
+      <div className=" container max-w-6xl min-h-screen mx-auto px-3 py-10 ">
         <div className="flex flex-col font-about">
           {/* main headline */}
           <div className="text-black text-4xl md:text-6xl text-center capitalize space-y-8">

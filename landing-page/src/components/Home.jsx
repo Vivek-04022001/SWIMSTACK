@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import home1 from "../assets/home-1.jpg";
 import home2 from "../assets/home-2.jpg";
 import home3 from "../assets/home-3.jpg";
@@ -7,6 +7,23 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 const Home = () => {
   const images = [home1, home2, home3, home4];
+  const [index, setIndex] = useState(0);
+  const handleIndex = (e) => {
+    const btn_id = e.target.id;
+    console.log(btn_id);
+  
+    // handle next click
+    if (btn_id === "next") {
+      setIndex((index) => (index === 3 ? 0 : index + 1));
+    }
+  
+    // handle previous click
+    if (btn_id === "prev") {
+      setIndex((index) => (index === 0 ? 3 : index - 1));
+    }
+  
+    console.log(index);
+  };
   const textMessage = [
     "Navigating Your Career Journey with Swim Stack",
     "Swim Your Way to Success with Swim Stack",
@@ -19,17 +36,14 @@ const Home = () => {
       <div className=" mx-auto pt-10">
         {/* Carousel Container */}
         <div className="carousel w-full">
-          {/* slides-section */}
-          {images.map((image, index) => (
-            <div
-              key={`slide${index + 1}`}
-              className="carousel-item relative w-full min-h-[50dvh]"
-              id={`slide${index + 1}`}
-            >
+        
+          <div className="carousel w-full">
+            {/* slides-section */}
+            <div className="carousel-item relative w-full min-h-[50dvh]">
               <div className="relative">
                 <img
-                  src={image}
-                  className="h-full md:w-full z-0 object-cover "
+                  src={images[index]}
+                  className="h-full md:w-full z-0 object-cover"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 z-2"></div>
                 {/* text content */}
@@ -49,37 +63,45 @@ const Home = () => {
               </div>
               {/* desktop buttons */}
               <div className="hidden  absolute md:flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-10">
-                <a
-                  href={`#slide${index === 0 ? images.length : index}`}
+                <button
+                  href="#"
+                  id="prev"
+                  onClick={handleIndex}
                   className="btn btn-sm md:btn-lg btn-circle bg-transparent  md:text-2xl text-primary border-primary hover:bg-secondary/50 hover:text-primary hover:border-none"
                 >
                   <AiOutlineArrowLeft />
-                </a>
-                <a
-                  href={`#slide${index === images.length - 1 ? 1 : index + 2}`}
+                </button>
+                <button
+                  href="#"
+                  id="next"
+                  onClick={handleIndex}
                   className="btn btn-sm md:btn-lg btn-circle bg-transparent  md:text-2xl text-primary border-primary hover:bg-secondary/50 hover:text-primary  hover:border-none"
                 >
                   <AiOutlineArrowRight />
-                </a>
+                </button>
               </div>
               {/* mobile buttons */}
               <div className="md:hidden absolute  flex gap-4 p-4 justify-between transform bottom-0 left-1/2 -translate-x-1/2 z-10">
-                <a
-                  href={`#slide${index === 0 ? images.length : index}`}
+                <button
+                  id="prev"
+                  onClick={handleIndex}
                   className="btn btn-sm  btn-circle bg-primary text-accent border-none    "
                 >
                   <AiOutlineArrowLeft />
-                </a>
-                <a
-                  href={`#slide${index === images.length - 1 ? 1 : index + 2}`}
+                </button>
+                <button
+                  id="next"
+                  onClick={handleIndex}
                   className="btn btn-sm btn-circle bg-primary text-accent border-none     "
                 >
                   <AiOutlineArrowRight />
-                </a>
+                </button>
               </div>
             </div>
-          ))}
+          </div>
         </div>
+
+        {/* next container */}
       </div>
     </section>
   );

@@ -23,7 +23,7 @@ const FAQ = () => {
               <div className="flex items-center justify-between py-3 text-primary transition duration-500 cursor-pointer group ease">
                 {/* <!-- Tab Title --> */}
                 <div className="transition duration-500 ease group-hover:text-secondary">
-                  What is Evolve Intern's virtual internship certification?
+                  What is SWIM STACK Intern's virtual internship certification?
                 </div>
                 {/* <!-- Arrow --> */}
                 <div className="transition duration-500 ease group-focus:-rotate-180 group-focus:text-secondary">
