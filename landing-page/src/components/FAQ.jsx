@@ -46,7 +46,7 @@ const FAQ = () => {
               <div className="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
                 <p class="py-2 text-justify text-primary">
                   This one-month (4-week) Virtual Internship Certification
-                  program at Evolve Intern focuses on empowering interns through
+                  program at SwimStack Intern focuses on empowering interns through
                   hands-on engagement with minor projects, fostering skill
                   enhancement.Upon successful completion, interns are rewarded
                   with a one-month internship certificate, recognizing their
