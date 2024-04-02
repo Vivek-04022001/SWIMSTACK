@@ -12,7 +12,7 @@ const Header = () => {
     // <!-- Hero section -->
     <section id="header">
       {/* <!-- hero container --> */}
-      <div class="container max-w-6xl mx-auto px-6">
+      <div class="container max-w-6xl mx-auto px-6 ">
         <nav class="flex items-center  md:justify-between font-bold  ">
           {/* <!-- Logo --> */}
           <div className="flex flex-1 justify-center md:justify-start">
