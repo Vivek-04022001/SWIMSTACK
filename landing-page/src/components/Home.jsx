@@ -11,17 +11,17 @@ const Home = () => {
   const handleIndex = (e) => {
     const btn_id = e.target.id;
     console.log(btn_id);
-  
+
     // handle next click
     if (btn_id === "next") {
       setIndex((index) => (index === 3 ? 0 : index + 1));
     }
-  
+
     // handle previous click
     if (btn_id === "prev") {
       setIndex((index) => (index === 0 ? 3 : index - 1));
     }
-  
+
     console.log(index);
   };
   const textMessage = [
@@ -36,7 +36,6 @@ const Home = () => {
       <div className=" mx-auto pt-10">
         {/* Carousel Container */}
         <div className="carousel w-full">
-        
           <div className="carousel w-full">
             {/* slides-section */}
             <div className="carousel-item relative w-full min-h-[50dvh]">
@@ -85,14 +84,14 @@ const Home = () => {
                 <button
                   id="prev"
                   onClick={handleIndex}
-                  className="btn btn-sm  btn-circle bg-primary text-accent border-none    "
+                  className=" group btn btn-sm  btn-circle bg-primary text-accent border-none    "
                 >
                   <AiOutlineArrowLeft />
                 </button>
                 <button
                   id="next"
                   onClick={handleIndex}
-                  className="btn btn-sm btn-circle bg-primary text-accent border-none     "
+                  className="group btn btn-sm btn-circle bg-primary text-accent border-none     "
                 >
                   <AiOutlineArrowRight />
                 </button>
